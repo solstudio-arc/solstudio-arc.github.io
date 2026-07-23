@@ -2,57 +2,217 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-    <title>개인정보처리방침 - 포커스 기어</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 - 포커스 기어</title>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/privacy.css">
 </head>
 
 <body>
-  <div class="container">
-    <h2>1. 개요</h2>
-    <p>
-      본 앱(포커스 기어)은 사용자의 개인정보를 중요하게 생각하며,
-      「개인정보 보호법」을 준수합니다.<br>
-      본 앱은 기본적으로 개인정보를 직접 수집하지 않습니다.
-    </p>
+  <main class="policy-page">
+    <header class="policy-hero">
+      <div class="app-kicker">
+        <img class="app-icon" src="../images/icon_focus_gear.png" alt="포커스 기어 앱 아이콘">
+        <span>포커스 기어</span>
+      </div>
 
-    <h2>2. 수집하는 개인정보</h2>
-    <p>
-      본 앱은 별도의 회원가입 또는 로그인 기능이 없으며,
-      사용자의 개인정보를 직접 수집하지 않습니다.
-    </p>
+      <div>
+        <h1>개인정보처리방침</h1>
+        <p class="policy-summary">
+          포커스 기어는 타이머, 스톱워치 기능을 제공하기 위해 필요한 기기 권한과 로컬 설정 정보를 사용합니다.
+        </p>
+      </div>
 
-    <h2>3. 광고 및 제3자 서비스</h2>
-    <p>
-      본 앱은 광고 제공을 위해 Google AdMob을 사용할 수 있습니다.<br>
-      AdMob은 광고 식별자(광고 ID 등)를 사용하여 맞춤형 광고를 제공할 수 있습니다.<br>
-      사용자는 기기 설정에서 광고 개인화 설정을 변경할 수 있습니다.<br>
-      자세한 내용은 Google의 개인정보처리방침을 참고하시기 바랍니다.
-    </p>
+      <div class="policy-meta" aria-label="정책 요약">
+        <span class="meta-chip">계정 없음</span>
+        <span class="meta-chip">자체 서버 전송 없음</span>
+        <span class="meta-chip">기기 권한 사용</span>
+        <span class="meta-chip">Google AdMob 사용 가능</span>
+      </div>
+    </header>
 
-    <h2>4. 기기 권한 사용</h2>
-    <p>본 앱은 다음 권한만 사용합니다:</p>
-    <ul>
-      <li>진동(VIBRATE): 터치 피드백 제공</li>
-    </ul>
-    <p>이 외의 개인정보 접근 권한은 사용하지 않습니다.</p>
+    <article class="policy-card">
+      <section class="policy-section">
+        <span class="section-number">01</span>
+        <div class="section-content">
+          <h2>개요</h2>
+          <p>
+            본 앱(포커스 기어)은 사용자의 개인정보를 중요하게 생각하며, 「개인정보 보호법」을 준수합니다.
+          </p>
+          <p>
+            본 앱은 별도의 계정 또는 자체 서버를 운영하지 않으며, 사용자의 설정과 알람음 등 앱 이용 정보는 기기에 저장됩니다.
+          </p>
+        </div>
+      </section>
 
-    <h2>5. 개인정보 보관 및 관리</h2>
-    <p>
-      본 앱은 사용자의 개인정보를 서버에 저장하지 않습니다.
-    </p>
+      <section class="policy-section">
+        <span class="section-number">02</span>
+        <div class="section-content">
+          <h2>기기에 저장되는 정보</h2>
+          <p>
+            본 앱은 서비스 제공을 위해 다음 정보를 기기에 저장할 수 있습니다.
+          </p>
+          <ul>
+            <li>테마, 타이머 프리셋, 사이클 구성</li>
+            <li>알림, 소리, 진동, 화면 관련 설정</li>
+            <li>튜토리얼 완료 여부</li>
+            <li>사용자가 선택한 알람음</li>
+          </ul>
+          <p>
+            위 정보는 별도 계정이나 자체 서버로 전송되지 않습니다.
+          </p>
+        </div>
+      </section>
 
-    <h2>6. 제3자 제공</h2>
-    <p>
-      본 앱은 사용자의 개인정보를 제3자에게 직접 제공하지 않습니다.<br>
-      단, 광고 서비스 제공을 위해 Google AdMob이 일부 정보를 처리할 수 있습니다.<br>
-      본 정책은 서비스 업데이트에 따라 변경될 수 있습니다.
-    </p>
+      <section class="policy-section">
+        <span class="section-number">03</span>
+        <div class="section-content">
+          <h2>사용자에게 직접 요청하는 권한</h2>
+          <p>
+            본 앱은 다음 권한을 사용자에게 직접 요청할 수 있습니다.
+          </p>
+          <table class="permission-table">
+            <thead>
+              <tr>
+                <th>권한</th>
+                <th>사용 목적</th>
+                <th>거부 시</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="권한">알림(POST_NOTIFICATIONS)</td>
+                <td data-label="사용 목적">타이머, 사이클 타이머, 스톱워치 진행 상태 및 종료 알림 제공</td>
+                <td data-label="거부 시">알림창 기능을 사용할 수 없습니다.</td>
+              </tr>
+              <tr>
+                <td data-label="권한">알람 및 리마인더(SCHEDULE_EXACT_ALARM)</td>
+                <td data-label="사용 목적">화면이 꺼졌거나 앱이 백그라운드에 있어도 설정 시각에 종료 알람 실행</td>
+                <td data-label="거부 시">종료 알람이 지연될 수 있습니다.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
 
-    <h2>7. 문의처</h2>
-    <p>
-      앱 관련 문의는 아래 이메일로 연락해 주세요.<br>
-      - 이메일: solstudio.arc@gmail.com
-    </p>
-</div>
+      <section class="policy-section">
+        <span class="section-number">04</span>
+        <div class="section-content">
+          <h2>기능 동작을 위한 권한</h2>
+          <p>
+            다음 권한은 별도 동의창 없이 앱 기능 또는 광고 SDK 동작을 위해 사용될 수 있습니다.
+          </p>
+          <ul>
+            <li>진동(VIBRATE): 타이머 종료 진동 제공</li>
+            <li>절전 해제(WAKE_LOCK): 앱 화면 및 종료 알람 동작 유지</li>
+            <li>포그라운드 서비스(FOREGROUND_SERVICE): 백그라운드 알람 서비스 실행</li>
+            <li>미디어 재생 포그라운드 서비스(FOREGROUND_SERVICE_MEDIA_PLAYBACK): 종료 알람음 재생</li>
+            <li>인터넷(INTERNET), 네트워크 상태 확인(ACCESS_NETWORK_STATE): AdMob 광고 요청 및 네트워크 상태 확인</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="policy-section">
+        <span class="section-number">05</span>
+        <div class="section-content">
+          <h2>알람음 파일 처리</h2>
+          <p>
+            사용자는 시스템 파일 선택기를 통해 직접 알람음 파일을 선택할 수 있습니다.
+          </p>
+          <ul>
+            <li>전체 저장소 권한은 사용하지 않습니다.</li>
+            <li>선택된 파일은 앱 전용 저장공간으로 복사됩니다.</li>
+            <li>선택된 알람음 파일은 서버로 업로드되거나 외부로 전송되지 않습니다.</li>
+            <li>앱 삭제 시 앱 전용 저장공간의 알람음 파일도 함께 삭제됩니다.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="policy-section">
+        <span class="section-number">06</span>
+        <div class="section-content">
+          <h2>광고 및 제3자 서비스</h2>
+          <p>
+            본 앱은 광고 제공을 위해 Google AdMob을 사용할 수 있습니다.
+          </p>
+          <p>
+            AdMob SDK는 광고 ID(AD_ID), Privacy Sandbox 광고 ID, Attribution Reporting, Topics API 관련 권한을 자동으로 추가할 수 있습니다.
+          </p>
+          <p>
+            Google Mobile Ads는 광고 제공, 분석, 부정 사용 방지를 위해 다음 정보를 자동으로 수집하거나 공유할 수 있으며, 전송 중 암호화됩니다.
+          </p>
+          <ul>
+            <li>IP 주소 및 이를 통한 대략적인 지역</li>
+            <li>광고 및 앱 이용 상호작용</li>
+            <li>앱 실행 시간, 오류, 성능 등의 진단 정보</li>
+            <li>광고 ID, App Set ID 등 기기 식별자</li>
+          </ul>
+          <p>
+            사용자는 기기 설정에서 광고 ID를 재설정하거나 삭제할 수 있으며, 광고 개인화 설정을 변경할 수 있습니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="policy-section">
+        <span class="section-number">07</span>
+        <div class="section-content">
+          <h2>사용하지 않는 권한</h2>
+          <p>
+            본 앱은 다음 권한을 사용하지 않습니다.
+          </p>
+          <ul>
+            <li>위치, 카메라, 마이크, 연락처</li>
+            <li>전화, 문자, 블루투스, 캘린더</li>
+            <li>건강정보, 사진·동영상 및 전체 저장소 권한</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="policy-section">
+        <span class="section-number">08</span>
+        <div class="section-content">
+          <h2>개인정보 보관 및 관리</h2>
+          <p>
+            본 앱은 별도의 계정 또는 자체 서버를 통해 사용자의 개인정보를 저장하지 않습니다.
+          </p>
+          <p>
+            기기에 저장된 설정 및 알람음 파일은 앱 삭제 시 함께 삭제됩니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="policy-section">
+        <span class="section-number">09</span>
+        <div class="section-content">
+          <h2>제3자 제공</h2>
+          <p>
+            본 앱은 사용자의 개인정보를 제3자에게 직접 제공하지 않습니다.
+          </p>
+          <p>
+            단, 광고 서비스 제공을 위해 Google AdMob 및 관련 Google 서비스가 제한된 범위의 정보를 처리할 수 있습니다.
+          </p>
+          <p>
+            본 정책은 서비스 업데이트에 따라 변경될 수 있습니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="policy-section">
+        <span class="section-number">10</span>
+        <div class="section-content">
+          <h2>문의처</h2>
+          <p>
+            앱 관련 문의는 아래 이메일로 연락해 주세요.
+          </p>
+          <p>
+            이메일: <a class="contact-link" href="mailto:solstudio.arc@gmail.com">solstudio.arc@gmail.com</a>
+          </p>
+        </div>
+      </section>
+    </article>
+  </main>
 </body>
 </html>
