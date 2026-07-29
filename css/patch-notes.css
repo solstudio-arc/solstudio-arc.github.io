@@ -26,6 +26,13 @@ body {
 .patch-kicker {
     color: var(--primary-dark);
     font-weight: 800;
+    text-decoration: none;
+    width: max-content;
+}
+
+.patch-kicker:hover,
+.patch-kicker:focus-visible {
+    color: var(--primary);
 }
 
 .patch-hero h1 {
@@ -67,6 +74,22 @@ body {
 .patch-list {
     display: grid;
     gap: 18px;
+}
+
+.creator-note-card {
+    background: rgba(255, 255, 255, .88);
+    border: 1px solid #e5e1ff;
+}
+
+.creator-note-body {
+    display: grid;
+    gap: 10px;
+}
+
+.creator-note-link {
+    width: max-content;
+    color: var(--primary-dark);
+    font-weight: 800;
 }
 
 .patch-card {
@@ -154,7 +177,6 @@ body {
 .back-link {
     display: inline-flex;
     width: max-content;
-    margin-top: 24px;
     color: var(--primary-dark);
     font-weight: 800;
 }

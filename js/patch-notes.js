@@ -33,7 +33,8 @@ function renderFilters(apps, activeId, onSelect) {
 }
 
 function createPatchCard(app, note) {
-    const card = createElement("article", "patch-card");
+    const isCreatorNote = note.type === "creator";
+    const card = createElement("article", isCreatorNote ? "patch-card creator-note-card" : "patch-card");
 
     const icon = document.createElement("img");
     icon.className = "patch-icon";
@@ -44,18 +45,38 @@ function createPatchCard(app, note) {
     const content = createElement("div", "patch-content");
 
     const meta = createElement("div", "patch-meta");
-    meta.appendChild(createElement("span", "patch-chip", app.category));
-    meta.appendChild(createElement("span", "patch-chip", note.version));
+    meta.appendChild(createElement("span", "patch-chip", isCreatorNote ? "Creator Note" : note.version));
     meta.appendChild(createElement("span", "patch-chip", note.date));
     content.appendChild(meta);
 
     content.appendChild(createElement("h2", "", app.name));
     content.appendChild(createElement("h3", "", note.title));
-    content.appendChild(createElement("p", "", note.summary));
 
-    const changes = createElement("ul", "");
-    changes.replaceChildren(...note.changes.map(change => createElement("li", "", change)));
-    content.appendChild(changes);
+    if (isCreatorNote) {
+        const body = createElement("div", "creator-note-body");
+        const paragraphs = (note.summary || "")
+            .split(/\n{2,}/)
+            .map(paragraph => paragraph.trim())
+            .filter(Boolean);
+        body.replaceChildren(...paragraphs.map(paragraph => createElement("p", "", paragraph)));
+        content.appendChild(body);
+
+        if (note.url) {
+            const link = document.createElement("a");
+            link.className = "creator-note-link";
+            link.href = note.url;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.textContent = "원문 보기";
+            content.appendChild(link);
+        }
+    } else {
+        content.appendChild(createElement("p", "", note.summary));
+
+        const changes = createElement("ul", "");
+        changes.replaceChildren(...(note.changes || []).map(change => createElement("li", "", change)));
+        content.appendChild(changes);
+    }
 
     card.id = app.id;
     card.appendChild(content);

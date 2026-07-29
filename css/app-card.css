@@ -229,6 +229,14 @@
 .card-content h3{
     font-size:20px;
     font-weight:800;
+    margin:0;
+}
+
+.card-title-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
     margin-bottom:6px;
 }
 
@@ -289,7 +297,6 @@
     border-top:1px solid var(--border);
 }
 
-.card-actions,
 .store-info{
     display:flex;
     justify-content:space-between;
@@ -341,11 +348,11 @@
     display:inline-flex;
     align-items:center;
     justify-content:center;
-    width:100%;
-    min-height:38px;
-    padding:9px 13px;
+    flex-shrink:0;
+    min-height:30px;
+    padding:7px 10px;
     color:var(--primary-dark);
-    font-size:13px;
+    font-size:12px;
     font-weight:800;
     line-height:1;
     background:var(--primary-light);

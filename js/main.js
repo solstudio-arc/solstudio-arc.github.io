@@ -102,7 +102,33 @@ function createAppCard(app) {
 
     const content = document.createElement("div");
     content.className = "card-content";
-    content.appendChild(createTextElement("h3", "", app.name));
+
+    const titleRow = document.createElement("div");
+    titleRow.className = "card-title-row";
+    titleRow.appendChild(createTextElement("h3", "", app.name));
+
+    if (app.patchNotesUrl) {
+        const patchLink = document.createElement("span");
+        patchLink.className = "patch-note-link";
+        patchLink.role = "link";
+        patchLink.tabIndex = 0;
+        patchLink.textContent = "패치노트";
+        patchLink.addEventListener("click", event => {
+            event.preventDefault();
+            event.stopPropagation();
+            window.location.href = app.patchNotesUrl;
+        });
+        patchLink.addEventListener("keydown", event => {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                event.stopPropagation();
+                window.location.href = app.patchNotesUrl;
+            }
+        });
+        titleRow.appendChild(patchLink);
+    }
+
+    content.appendChild(titleRow);
 
     const description = document.createElement("p");
     (app.description || []).forEach((line, index) => {
@@ -116,34 +142,9 @@ function createAppCard(app) {
     main.appendChild(content);
     card.appendChild(main);
 
-    if ((isEnabled && app.storeBadge) || app.patchNotesUrl) {
+    if (isEnabled && app.storeBadge) {
         const bottom = document.createElement("div");
         bottom.className = "card-bottom";
-
-        if (app.patchNotesUrl) {
-            const actions = document.createElement("div");
-            actions.className = "card-actions";
-
-            const patchLink = document.createElement("span");
-            patchLink.className = "patch-note-link";
-            patchLink.role = "link";
-            patchLink.tabIndex = 0;
-            patchLink.textContent = "패치노트";
-            patchLink.addEventListener("click", event => {
-                event.preventDefault();
-                event.stopPropagation();
-                window.location.href = app.patchNotesUrl;
-            });
-            patchLink.addEventListener("keydown", event => {
-                if (event.key === "Enter" || event.key === " ") {
-                    event.preventDefault();
-                    event.stopPropagation();
-                    window.location.href = app.patchNotesUrl;
-                }
-            });
-            actions.appendChild(patchLink);
-            bottom.appendChild(actions);
-        }
 
         if (isEnabled && app.storeBadge) {
             const storeInfo = document.createElement("div");
