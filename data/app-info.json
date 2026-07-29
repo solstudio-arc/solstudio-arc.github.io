@@ -1,0 +1,78 @@
+{
+  "released": [
+    {
+      "name": "말랑 꾹꾹",
+      "category": "Casual",
+      "status": "Released",
+      "date": "2026.07",
+      "description": [
+        "귀여운 발바닥 장난감 스트레스볼",
+        "신나게 누르며 스트레스를 날려보세요"
+      ],
+      "icon": "images/icon_paw_tap.png",
+      "url": "https://play.google.com/store/apps/details?id=com.solstudio.pawtap",
+      "storeBadge": "images/google-play-badge.png",
+      "patchNotesUrl": "patch-notes.html#pawtap"
+    },
+    {
+      "name": "단축키 모아",
+      "category": "Productivity",
+      "status": "Released",
+      "date": "2026.07",
+      "description": [
+        "많이 사용하는 프로그램들의 단축키 모음집",
+        "Win OS, Excel, PPT, Word 등"
+      ],
+      "icon": "images/icon_shortcut_moa.png",
+      "url": "https://play.google.com/store/apps/details?id=com.solstudio.shortcutmoa",
+      "storeBadge": "images/google-play-badge.png",
+      "patchNotesUrl": "patch-notes.html#shortcut-moa"
+    },
+    {
+      "name": "꾹 메모",
+      "category": "Productivity",
+      "status": "Released",
+      "date": "2026.07",
+      "description": [
+        "다양한 테마, 고양이가 귀여운 메모앱",
+        "빠르게 기록하고 쉽게 관리하는 메모 앱"
+      ],
+      "icon": "images/icon_paw_memo.png",
+      "url": "https://play.google.com/store/apps/details?id=com.solstudio.pawmemo",
+      "storeBadge": "images/google-play-badge.png",
+      "patchNotesUrl": "patch-notes.html#paw-memo"
+    }
+  ],
+  "upcoming": [
+    {
+      "name": "포커스 기어",
+      "category": "Productivity",
+      "status": "출시 예정",
+      "date": "2026.08",
+      "description": [
+        "책상 위 감성 시계 · 집중 타이머 앱"
+      ],
+      "icon": "images/icon_focus_gear.png"
+    },
+    {
+      "name": "모닝콜 앱",
+      "category": "Lifestyle",
+      "status": "개발중",
+      "date": "8월 말 출시 예정",
+      "description": [
+        "모닝콜 앱"
+      ],
+      "placeholderText": "M"
+    },
+    {
+      "name": "프로젝트: F",
+      "category": "Utility",
+      "status": "기획 단계",
+      "date": "26년 4분기",
+      "description": [
+        "꽃 사전."
+      ],
+      "placeholderText": "F"
+    }
+  ]
+}
