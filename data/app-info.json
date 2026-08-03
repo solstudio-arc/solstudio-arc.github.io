@@ -41,19 +41,23 @@
       "url": "https://play.google.com/store/apps/details?id=com.solstudio.pawmemo",
       "storeBadge": "images/google-play-badge.png",
       "patchNotesUrl": "patch-notes.html#paw-memo"
-    }
-  ],
-  "upcoming": [
+    },
     {
       "name": "포커스 기어",
       "category": "Productivity",
-      "status": "출시 예정",
+      "status": "Released",
       "date": "2026.08",
       "description": [
-        "책상 위 감성 시계 · 집중 타이머 앱"
+        "책상 위 감성 시계 · 집중 타이머 앱",
+        "기능 타이머와 함께 집중의 시간을 가져보세요"
       ],
-      "icon": "images/icon_focus_gear.png"
-    },
+      "icon": "images/icon_focus_gear.png",
+      "url": "https://play.google.com/store/apps/details?id=com.solstudio.focus_gear",
+      "storeBadge": "images/google-play-badge.png",
+      "patchNotesUrl": "patch-notes.html#focus-gear"
+    }
+  ],
+  "upcoming": [
     {
       "name": "모닝콜 앱",
       "category": "Lifestyle",
