@@ -1,6 +1,7 @@
 {
   "released": [
     {
+      "id": "pawtap",
       "name": "말랑 꾹꾹",
       "category": "Casual",
       "status": "Released",
@@ -15,6 +16,7 @@
       "patchNotesUrl": "patch-notes.html#pawtap"
     },
     {
+      "id": "shortcut-moa",
       "name": "단축키 모아",
       "category": "Productivity",
       "status": "Released",
@@ -29,6 +31,7 @@
       "patchNotesUrl": "patch-notes.html#shortcut-moa"
     },
     {
+      "id": "paw-memo",
       "name": "꾹 메모",
       "category": "Productivity",
       "status": "Released",
@@ -43,6 +46,7 @@
       "patchNotesUrl": "patch-notes.html#paw-memo"
     },
     {
+      "id": "focus-gear",
       "name": "포커스 기어",
       "category": "Productivity",
       "status": "Released",
@@ -59,7 +63,8 @@
   ],
   "upcoming": [
     {
-      "name": "모닝콜 앱",
+      "id": "paw-up",
+      "name": "꾹 업",
       "category": "Lifestyle",
       "status": "개발중",
       "date": "8월 말 출시 예정",
@@ -69,6 +74,7 @@
       "placeholderText": "M"
     },
     {
+      "id": "project-f",
       "name": "프로젝트: F",
       "category": "Utility",
       "status": "기획 단계",
