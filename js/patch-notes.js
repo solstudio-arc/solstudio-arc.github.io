@@ -36,11 +36,17 @@ function createPatchCard(app, note) {
     const isCreatorNote = note.type === "creator";
     const card = createElement("article", isCreatorNote ? "patch-card creator-note-card" : "patch-card");
 
-    const icon = document.createElement("img");
-    icon.className = "patch-icon";
-    icon.src = app.icon;
-    icon.alt = `${app.name} 앱 아이콘`;
-    card.appendChild(icon);
+    if (app.icon) {
+        const icon = document.createElement("img");
+        icon.className = "patch-icon";
+        icon.src = app.icon;
+        icon.alt = `${app.name} 앱 아이콘`;
+        card.appendChild(icon);
+    } else {
+        const icon = createElement("div", "patch-icon patch-icon-placeholder", app.name.charAt(0));
+        icon.setAttribute("aria-hidden", "true");
+        card.appendChild(icon);
+    }
 
     const content = createElement("div", "patch-content");
 

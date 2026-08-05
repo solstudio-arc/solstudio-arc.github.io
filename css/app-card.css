@@ -336,6 +336,29 @@
     transform:translateX(6px);
 }
 
+.social-shortcut{
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    z-index:2;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.social-shortcut > span:first-child{
+    display:none;
+}
+
+.social-shortcut .arrow{
+    color:var(--primary-dark);
+}
+
+.contact-card .card-content p{
+    min-height:0;
+    padding-right:46px;
+}
+
 .card-action{
     display:flex;
     align-items:center;
@@ -485,6 +508,24 @@
 }
 
 .app-card.instagram .card-accent {
+    background: var(--accent);
+}
+
+.app-card.blog {
+    --accent: rgba(3, 199, 90, 0.14);
+    color: #03c75a;
+}
+
+.app-card.blog .card-accent {
+    background: var(--accent);
+}
+
+.app-card.youtube {
+    --accent: rgba(255, 0, 0, 0.12);
+    color: #ff0000;
+}
+
+.app-card.youtube .card-accent {
     background: var(--accent);
 }
 

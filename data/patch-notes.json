@@ -111,6 +111,14 @@
       "icon": "images/icon_paw_memo.png",
       "notes": [
         {
+          "type": "creator",
+          "version": "Creator Note",
+          "date": "2026.08.06",
+          "title": "창작자 다이어리 - 꾹 메모",
+          "summary": "세 번째 창작자 노트에서는 [ 꾹 메모 ]를 소개합니다.\n\n꾹 메모는 빠르게 기록하고 편하게 정리할 수 있는 메모 앱입니다.\n\n간편한 메모 기능에 귀여운 캐릭터 테마를 더해 만들었습니다.\n\n이번 노트에서는 앱의 시작과 테마 방향성을 함께 담았습니다.\n\n앞으로도 계절마다 새로운 고양이 테마를 선보일 예정입니다.",
+          "url": "https://blog.naver.com/eltene/224369417330"
+        },
+        {
           "version": "ver.1.1.0",
           "date": "2026.08.05",
           "title": "신규 테마 추가",
@@ -178,7 +186,6 @@
     {
       "id": "paw-up",
       "name": "꾹 업",
-      "icon": "images/.png",
       "notes": [
       ]
     }

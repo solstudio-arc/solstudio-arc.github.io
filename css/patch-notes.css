@@ -110,6 +110,15 @@ body {
     box-shadow: var(--shadow-sm);
 }
 
+.patch-icon-placeholder {
+    display: grid;
+    place-items: center;
+    color: var(--primary-dark);
+    font-size: 22px;
+    font-weight: 900;
+    background: var(--primary-light);
+}
+
 .patch-content {
     display: grid;
     gap: 12px;
