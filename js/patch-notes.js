@@ -12,6 +12,30 @@ function createElement(tagName, className, text) {
     return element;
 }
 
+function getChangeText(change) {
+    return typeof change === "string" ? change : change.text;
+}
+
+function getChangeChildren(change) {
+    return typeof change === "string" ? [] : change.children || [];
+}
+
+function createChangeList(changes, depth = 0) {
+    const list = createElement("ul", depth > 0 ? "patch-change-list nested" : "patch-change-list");
+    list.replaceChildren(...(changes || []).map(change => {
+        const item = createElement("li", "");
+        item.appendChild(createElement("span", "patch-change-text", getChangeText(change)));
+
+        const children = getChangeChildren(change);
+        if (children.length) {
+            item.appendChild(createChangeList(children, depth + 1));
+        }
+
+        return item;
+    }));
+    return list;
+}
+
 function getInitialFilter(apps) {
     const idFromHash = window.location.hash.replace("#", "");
     return apps.some(app => app.id === idFromHash) ? idFromHash : "all";
@@ -78,10 +102,7 @@ function createPatchCard(app, note) {
         }
     } else {
         content.appendChild(createElement("p", "", note.summary));
-
-        const changes = createElement("ul", "");
-        changes.replaceChildren(...(note.changes || []).map(change => createElement("li", "", change)));
-        content.appendChild(changes);
+        content.appendChild(createChangeList(note.changes));
     }
 
     card.id = app.id;

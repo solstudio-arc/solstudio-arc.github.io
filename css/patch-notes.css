@@ -150,20 +150,26 @@ body {
     line-height: 1.35;
 }
 
-.patch-content ul {
+.patch-change-list {
     display: grid;
     gap: 8px;
     padding-left: 0;
     list-style: none;
 }
 
-.patch-content li {
+.patch-change-list.nested {
+    gap: 6px;
+    margin-top: 8px;
+    padding-left: 16px;
+}
+
+.patch-change-list li {
     position: relative;
     padding-left: 20px;
     color: var(--text-light);
 }
 
-.patch-content li::before {
+.patch-change-list li::before {
     content: "";
     position: absolute;
     top: .72em;
@@ -172,6 +178,17 @@ body {
     height: 7px;
     background: var(--primary);
     border-radius: 50%;
+}
+
+.patch-change-list.nested li::before {
+    width: 5px;
+    height: 5px;
+    background: #9e95ff;
+}
+
+.patch-change-text {
+    display: block;
+    line-height: 1.65;
 }
 
 .patch-load-message {
