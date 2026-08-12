@@ -20,6 +20,10 @@ function getChangeChildren(change) {
     return typeof change === "string" ? [] : change.children || [];
 }
 
+function getPublishedNotes(app) {
+    return (app.notes || []).filter(note => note.draft !== true);
+}
+
 function createChangeList(changes, depth = 0) {
     const list = createElement("ul", depth > 0 ? "patch-change-list nested" : "patch-change-list");
     list.replaceChildren(...(changes || []).map(change => {
@@ -124,11 +128,15 @@ function renderPatchNotes(apps, activeId) {
         : apps.filter(app => app.id === activeId);
 
     const notes = visibleApps
-        .flatMap(app => app.notes.map(note => ({ app, note })))
+        .flatMap(app => getPublishedNotes(app).map(note => ({ app, note })))
         .sort((a, b) => getNoteTimestamp(b.note) - getNoteTimestamp(a.note));
 
     const cards = notes.map(({ app, note }) => createPatchCard(app, note));
-    patchList.replaceChildren(...cards);
+    if (cards.length) {
+        patchList.replaceChildren(...cards);
+    } else {
+        patchList.replaceChildren(createElement("p", "patch-load-message", "아직 공개된 패치노트가 없습니다."));
+    }
 }
 
 async function initPatchNotes() {

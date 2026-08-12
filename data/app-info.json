@@ -71,7 +71,7 @@
       "description": [
         "모닝콜 앱"
       ],
-      "placeholderText": "M"
+      "icon": "images/icon_paw_up.png"
     },
     {
       "id": "project-f",
