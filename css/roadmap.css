@@ -1,0 +1,137 @@
+/* ==========================
+   UPDATE ROADMAP
+========================== */
+.roadmap-panel{
+    display:grid;
+    gap:14px;
+    padding:20px;
+    background:rgba(255,255,255,.72);
+    border:1px solid var(--border);
+    border-radius:24px;
+    box-shadow:var(--shadow-sm);
+}
+
+.roadmap-item{
+    position:relative;
+    display:grid;
+    grid-template-columns:minmax(150px, .8fr) minmax(0, 1.4fr) minmax(160px, .9fr);
+    gap:18px;
+    align-items:center;
+    padding:18px;
+    overflow:hidden;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:18px;
+    transition:var(--transition-fast);
+}
+
+.roadmap-item:hover{
+    transform:translateY(-2px);
+    border-color:rgba(108,99,255,.25);
+    box-shadow:var(--shadow-sm);
+}
+
+.roadmap-app{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    min-width:0;
+}
+
+.roadmap-icon{
+    width:42px;
+    height:42px;
+    flex-shrink:0;
+    object-fit:cover;
+    border-radius:12px;
+    box-shadow:0 8px 18px rgba(0,0,0,.1);
+}
+
+.roadmap-app strong,
+.roadmap-title strong{
+    display:block;
+    overflow:hidden;
+    font-size:15px;
+    font-weight:800;
+    line-height:1.35;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.roadmap-app span,
+.roadmap-title span,
+.roadmap-date span{
+    display:block;
+    color:var(--text-light);
+    font-size:13px;
+    line-height:1.45;
+}
+
+.roadmap-title{
+    min-width:0;
+}
+
+.roadmap-date{
+    display:grid;
+    gap:8px;
+}
+
+.roadmap-date-row{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    align-items:center;
+}
+
+.roadmap-chip{
+    display:inline-flex;
+    width:max-content;
+    padding:5px 9px;
+    color:var(--primary-dark);
+    font-size:12px;
+    font-weight:800;
+    line-height:1;
+    background:var(--primary-light);
+    border:1px solid #e5e1ff;
+    border-radius:999px;
+}
+
+.roadmap-chip.done{
+    color:#2f7a53;
+    background:#e9f8ef;
+    border-color:#c9ecd6;
+}
+
+.roadmap-track{
+    position:relative;
+    height:8px;
+    overflow:hidden;
+    background:#eef1fb;
+    border-radius:999px;
+}
+
+.roadmap-progress{
+    position:absolute;
+    inset:0 auto 0 0;
+    width:var(--progress, 50%);
+    min-width:10px;
+    background:linear-gradient(90deg, var(--primary), #9e95ff);
+    border-radius:inherit;
+}
+
+.roadmap-progress.done{
+    background:linear-gradient(90deg, #43b06c, #9cdcae);
+}
+
+.roadmap-empty{
+    padding:22px;
+    color:var(--text-light);
+    text-align:center;
+}
+
+@media (max-width:900px){
+    .roadmap-item{
+        grid-template-columns:1fr;
+        gap:12px;
+    }
+}

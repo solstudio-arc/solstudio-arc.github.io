@@ -25,6 +25,10 @@
                 Apps
             </a>
 
+            <a href="#roadmap">
+                Roadmap
+            </a>
+
             <a href="#contact">
                 Contact
             </a>
@@ -59,15 +63,15 @@
                 </div>
                 <div class="hero-stats">
                     <div class="stat-card">
-                        <span class="stat-number">4</span>
+                        <span class="stat-number" data-stat-count="released">0</span>
                         <span class="stat-title">Released</span>
                     </div>
                     <div class="stat-card">
-                        <span class="stat-number">0</span>
+                        <span class="stat-number" data-stat-count="comingSoon">0</span>
                         <span class="stat-title">Coming Soon</span>
                     </div>
                     <div class="stat-card">
-                        <span class="stat-number">1</span>
+                        <span class="stat-number" data-stat-count="development">0</span>
                         <span class="stat-title">Development</span>
                     </div>
                 </div>
@@ -127,6 +131,18 @@
 
             <div class="app-grid" id="upcoming-app-grid" data-app-list="upcoming" aria-live="polite"></div>
         </section>
+
+        <!-- ROADMAP -->
+        <section id="roadmap" class="section">
+            <div class="section-header">
+                <span class="section-label">ROADMAP</span>
+                <h2>Update Roadmap</h2>
+                <p>준비 중인 업데이트와 최근 변경 사항</p>
+            </div>
+
+            <div class="roadmap-panel" id="update-roadmap" aria-live="polite"></div>
+        </section>
+
         <!-- CONTACT -->
         <section id="contact" class="section">
             <div class="section-header">
@@ -229,6 +245,6 @@
         </footer>
     </main>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=20260825-1"></script>
 </body>
 </html>
