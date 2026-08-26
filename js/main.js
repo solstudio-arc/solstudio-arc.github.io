@@ -204,8 +204,8 @@ async function loadAppInfo() {
 function getAppStats(appInfo) {
     return {
         released: (appInfo.released || []).length,
-        comingSoon: 0,
-        development: (appInfo.upcoming || []).length
+        development: (appInfo.development || []).length,
+        rnd: (appInfo.rnd || []).length
     };
 }
 
@@ -223,7 +223,11 @@ function renderAppCards(appInfo) {
     appLists.forEach(list => {
         const listName = list.dataset.appList;
         const apps = appInfo[listName] || [];
-        list.replaceChildren(...apps.map(createAppCard));
+        if (apps.length) {
+            list.replaceChildren(...apps.map(createAppCard));
+        } else {
+            list.replaceChildren(createTextElement("p", "app-load-message", "아직 표시할 앱이 없습니다."));
+        }
     });
 }
 

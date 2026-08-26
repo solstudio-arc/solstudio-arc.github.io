@@ -76,7 +76,8 @@
       "patchNotesUrl": "patch-notes.html#paw-up"
     }
   ],
-  "upcoming": [
+  "development": [],
+  "rnd": [
     {
       "id": "project-m",
       "name": "프로젝트: M",

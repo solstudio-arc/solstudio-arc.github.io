@@ -242,7 +242,7 @@
 }
 
 .stat-card{
-    min-width:120px;
+    min-width:148px;
     padding:22px;
     border-radius:22px;
     background:white;
@@ -250,6 +250,8 @@
     box-shadow:var(--shadow-sm);
     display:flex;
     flex-direction:column;
+    align-items:center;
+    text-align:center;
     transition:var(--transition);
 }
 
@@ -268,6 +270,7 @@
     margin-top:4px;
     color:var(--text-light);
     font-size:14px;
+    white-space:nowrap;
 }
 
 /* ==========================
