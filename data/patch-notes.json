@@ -242,7 +242,7 @@
         {
           "version": "ver.1.2.0",
           "date": "2026.09.09",
-          "title": "개발 프로그램 단축키 추가 예정 안내",
+          "title": "개발 프로그램 단축키 추가",
           "summary": "VS Code와 Notepad++ 단축키를 추가됩니다.",
           "changes": [
             {
@@ -393,6 +393,22 @@
       "name": "꾹 메모",
       "icon": "images/icon_paw_memo.png",
       "notes": [
+        {
+          "version": "ver.1.2.0",
+          "date": "2026.09.23 예정",
+          "title": "신규 테마 추가 예정",
+          "summary": "새로운 테마를 추가할 예정입니다.",
+          "changes": [
+            {
+              "text": "새로운 테마를 추가할 예정입니다.",
+              "children": [
+                {
+                  "text": "치즈와 함께 가을 분위기 풍기는 테마로 찾아오겠습니다."
+                }
+              ]
+            }
+          ]
+        },
         {
           "type": "creator",
           "version": "Creator Note",
@@ -762,7 +778,7 @@
       "notes": [
         {
           "version": "ver.1.0.0",
-          "date": "미정",
+          "date": "2026.09.17 예정",
           "title": "프로토타입 개발",
           "summary": "방치형 힐링 게임, 프로토타입 개발 진행 중",
           "changes": [
