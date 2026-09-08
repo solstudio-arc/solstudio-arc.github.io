@@ -241,7 +241,7 @@
       "notes": [
         {
           "version": "ver.1.2.0",
-          "date": "2026.09.09 예정",
+          "date": "2026.09.09",
           "title": "개발 프로그램 단축키 추가 예정 안내",
           "summary": "VS Code와 Notepad++ 단축키를 추가됩니다.",
           "changes": [
@@ -253,6 +253,17 @@
                 },
                 {
                   "text": "Notepad++"
+                }
+              ]
+            },
+            {
+              "text": "기타 업데이트 및 오류 수정",
+              "children": [
+                {
+                  "text": "일부 단축키 정보의 오타를 수정했습니다."
+                },
+                {
+                  "text": "메뉴 카테고리에서 개발/디자인을 개발과 디자인으로 분리하였습니다."
                 }
               ]
             }
@@ -747,7 +758,7 @@
     {
       "id": "project-w",
       "name": "프로젝트: W",
-      "icon": "images/icon_paw_tap.png",
+      "icon": "images/icon_world_tree.png",
       "notes": [
         {
           "version": "ver.1.0.0",
