@@ -24,6 +24,30 @@ function getPublishedNotes(app) {
     return (app.notes || []).filter(note => note.draft !== true);
 }
 
+function getNoteType(note) {
+    return (note.type || "").toLowerCase();
+}
+
+function getSpecialNoteMeta(note) {
+    const noteType = getNoteType(note);
+
+    if (noteType === "creator") {
+        return {
+            chip: "Creator Note",
+            className: "creator-note-card"
+        };
+    }
+
+    if (noteType === "prototype") {
+        return {
+            chip: "Prototype",
+            className: "prototype-note-card"
+        };
+    }
+
+    return null;
+}
+
 function createChangeList(changes, depth = 0) {
     const list = createElement("ul", depth > 0 ? "patch-change-list nested" : "patch-change-list");
     list.replaceChildren(...(changes || []).map(change => {
@@ -61,8 +85,8 @@ function renderFilters(apps, activeId, onSelect) {
 }
 
 function createPatchCard(app, note) {
-    const isCreatorNote = note.type === "creator";
-    const card = createElement("article", isCreatorNote ? "patch-card creator-note-card" : "patch-card");
+    const specialNote = getSpecialNoteMeta(note);
+    const card = createElement("article", specialNote ? `patch-card ${specialNote.className}` : "patch-card");
 
     if (app.icon) {
         const icon = document.createElement("img");
@@ -79,14 +103,14 @@ function createPatchCard(app, note) {
     const content = createElement("div", "patch-content");
 
     const meta = createElement("div", "patch-meta");
-    meta.appendChild(createElement("span", "patch-chip", isCreatorNote ? "Creator Note" : note.version));
+    meta.appendChild(createElement("span", "patch-chip", specialNote ? specialNote.chip : note.version));
     meta.appendChild(createElement("span", "patch-chip", note.date));
     content.appendChild(meta);
 
     content.appendChild(createElement("h2", "", app.name));
     content.appendChild(createElement("h3", "", note.title));
 
-    if (isCreatorNote) {
+    if (specialNote) {
         const body = createElement("div", "creator-note-body");
         const paragraphs = (note.summary || "")
             .split(/\n{2,}/)

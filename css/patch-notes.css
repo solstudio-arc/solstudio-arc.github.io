@@ -76,7 +76,8 @@ body {
     gap: 18px;
 }
 
-.creator-note-card {
+.creator-note-card,
+.prototype-note-card {
     background: rgba(255, 255, 255, .88);
     border: 1px solid #e5e1ff;
 }
