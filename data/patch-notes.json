@@ -791,7 +791,8 @@
       "icon": "images/icon_m.png",
       "notes": [
         {
-          "version": "ver.1.0.0",
+          "type": "Prototype",
+          "version": "Prototype",
           "date": "2026.08.21",
           "title": "프로토타입 개발",
           "summary": "프로토타입 진행 완료",
@@ -810,16 +811,24 @@
       ]
     },
     {
-      "id": "project-w",
-      "name": "프로젝트: W",
+      "id": "project-y",
+      "name": "프로젝트: Y",
       "icon": "images/icon_world_tree.png",
       "notes": [
         {
           "type": "Prototype",
           "version": "prototype",
+          "date": "2026.09.27",
+          "title": "게임플레이 영상 공개",
+          "summary": "(유튜브) 프로토타입 - 게임플레이 영상 공개",
+          "url": "https://youtube.com/shorts/q5l97uaaNdM?si=V0A10jE7_1Uxrc4c"
+        },
+        {
+          "type": "Prototype",
+          "version": "prototype",
           "date": "2026.09.20",
           "title": "오프닝 공개",
-          "summary": "유튜브 프로토타입 - 오프닝 공개",
+          "summary": "(유튜브) 프로토타입 - 오프닝 공개",
           "url": "https://www.youtube.com/shorts/b1mnr2JABnw"
         },
         {
@@ -827,7 +836,7 @@
           "version": "prototype",
           "date": "2026.09.18",
           "title": "티저 공개",
-          "summary": "유튜브 프로토타입 - 티저 공개",
+          "summary": "(유튜브) 프로토타입 - 티저 공개",
           "url": "https://www.youtube.com/shorts/u0Y7jougXHA"
         },
         {
@@ -840,7 +849,7 @@
               "text": "카드 수집 방치형 힐링 시뮬레이션 게임"
             },
             {
-              "text": "프로토타입 개발 진행 중입니다."
+              "text": "2주간 프로토타입 개발 진행 중입니다."
             }
           ]
         }

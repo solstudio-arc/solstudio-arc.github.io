@@ -90,16 +90,16 @@
       "placeholderText": "M"
     },
     {
-      "id": "project-w",
-      "name": "프로젝트: W",
-      "category": "Utility",
+      "id": "project-y",
+      "name": "프로젝트: Y",
+      "category": "Game",
       "status": "프로토타입 개발 중",
       "date": "미정",
       "description": [
         "방치형 힐링 시뮬레이션 R&D",
         "천천히 머물며 성장하는 작은 세계"
       ],
-      "placeholderText": "W"
+      "placeholderText": "Y"
     }
   ]
 }
