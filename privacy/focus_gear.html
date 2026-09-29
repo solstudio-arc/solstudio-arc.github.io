@@ -30,6 +30,7 @@
         <span class="meta-chip">회원가입 없음</span>
         <span class="meta-chip">개인정보 직접 수집 없음</span>
         <span class="meta-chip">기기 권한 사용</span>
+        <span class="meta-chip">카메라·마이크 권한 사용</span>
         <span class="meta-chip">Google AdMob 사용 가능</span>
       </div>
     </header>
@@ -58,6 +59,7 @@
           <ul>
             <li>테마, 타이머 프리셋, 사이클 구성</li>
             <li>알림, 소리, 진동, 화면 관련 설정</li>
+            <li>모션 제어 및 음성 제어 사용 여부</li>
             <li>튜토리얼 완료 여부</li>
             <li>사용자가 선택한 알람음</li>
           </ul>
@@ -93,6 +95,16 @@
                 <td data-label="사용 목적">화면이 꺼졌거나 앱이 백그라운드에 있어도 설정 시각에 종료 알람 실행</td>
                 <td data-label="거부 시">종료 알람이 지연될 수 있습니다.</td>
               </tr>
+              <tr>
+                <td data-label="권한">카메라(CAMERA)</td>
+                <td data-label="사용 목적">핸즈프리 서포터의 모션 제어 기능에서 기기 내 손동작 인식</td>
+                <td data-label="거부 시">모션 제어 기능을 사용할 수 없습니다.</td>
+              </tr>
+              <tr>
+                <td data-label="권한">마이크(RECORD_AUDIO)</td>
+                <td data-label="사용 목적">핸즈프리 서포터의 음성 제어 기능에서 기기 내 음성 명령 인식</td>
+                <td data-label="거부 시">음성 제어 기능을 사용할 수 없습니다.</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -118,6 +130,23 @@
       <section class="policy-section">
         <span class="section-number">05</span>
         <div class="section-content">
+          <h2>카메라 및 음성 인식 처리</h2>
+          <p>
+            본 앱은 핸즈프리 서포터 기능 제공을 위해 카메라와 마이크를 사용할 수 있으며, 모션 및 음성 인식은 기기 내에서 처리됩니다.
+          </p>
+          <ul>
+            <li>카메라는 앱 실행 중 기기 내에서 손동작을 인식하여 페이지 이동, 타이머, 스톱워치 조작 등에 사용됩니다.</li>
+            <li>마이크는 앱 실행 중 기기 내에서 사용자의 음성 명령을 인식하여 타이머, 스톱워치 조작 등에 사용됩니다.</li>
+            <li>카메라 영상과 음성 입력은 모션 및 음성 인식 목적으로만 사용되며, 앱에서 별도로 저장하지 않습니다.</li>
+            <li>카메라 영상과 음성 입력은 자체 서버로 업로드되지 않으며 외부로 전송되지 않습니다.</li>
+            <li>사용자는 기기 설정 또는 앱 설정에서 관련 권한과 기능 사용 여부를 변경할 수 있습니다.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="policy-section">
+        <span class="section-number">06</span>
+        <div class="section-content">
           <h2>알람음 파일 처리</h2>
           <p>
             사용자는 시스템 파일 선택기를 통해 직접 알람음 파일을 선택할 수 있습니다.
@@ -132,7 +161,7 @@
       </section>
 
       <section class="policy-section">
-        <span class="section-number">06</span>
+        <span class="section-number">07</span>
         <div class="section-content">
           <h2>광고 및 제3자 서비스</h2>
           <p>
@@ -157,14 +186,14 @@
       </section>
 
       <section class="policy-section">
-        <span class="section-number">07</span>
+        <span class="section-number">08</span>
         <div class="section-content">
           <h2>사용하지 않는 권한</h2>
           <p>
             본 앱은 다음 권한을 사용하지 않습니다.
           </p>
           <ul>
-            <li>위치, 카메라, 마이크, 연락처</li>
+            <li>위치, 연락처</li>
             <li>전화, 문자, 블루투스, 캘린더</li>
             <li>건강정보, 사진·동영상 및 전체 저장소 권한</li>
           </ul>
@@ -172,7 +201,7 @@
       </section>
 
       <section class="policy-section">
-        <span class="section-number">08</span>
+        <span class="section-number">09</span>
         <div class="section-content">
           <h2>개인정보 보관 및 관리</h2>
           <p>
@@ -185,7 +214,7 @@
       </section>
 
       <section class="policy-section">
-        <span class="section-number">09</span>
+        <span class="section-number">10</span>
         <div class="section-content">
           <h2>제3자 제공</h2>
           <p>
@@ -201,7 +230,7 @@
       </section>
 
       <section class="policy-section">
-        <span class="section-number">10</span>
+        <span class="section-number">11</span>
         <div class="section-content">
           <h2>문의처</h2>
           <p>
