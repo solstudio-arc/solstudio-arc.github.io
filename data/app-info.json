@@ -22,7 +22,7 @@
       "status": "Released",
       "date": "2026.07",
       "description": [
-        "자주 사용하는 프로그램 단축키 모음집",
+        "직장인을 위한 프로그램 단축키 모음집",
         "Excel, PPT, Word, Photoshop 등"
       ],
       "icon": "images/icon_shortcut_moa.png",
@@ -76,30 +76,58 @@
       "patchNotesUrl": "patch-notes.html#paw-up"
     }
   ],
-  "development": [],
+  "development": [
+    {
+      "id": "ticket-book",
+      "name": "티켓북 - 나의 문화 생활 기록",
+      "category": "Lifestyle",
+      "status": "Develop",
+      "date": "2026.10",
+      "description": [
+        "공연/전시/영화 등 여러 가지 활동 이미지를 티켓 프레임으로 정리하는 나만의 문화 생활 기록앱"
+      ],
+      "icon": "images/icon_ticket_book.png",
+      "patchNotesUrl": "patch-notes.html#ticket-book"
+    }
+  ],
   "rnd": [
     {
-      "id": "project-m",
-      "name": "프로젝트: M",
+      "id": "moodwalk",
+      "name": "산책의 온도",
       "category": "Lifestyle",
-      "status": "프로토타입 개발 중",
-      "date": "미정",
+      "status": "R&D",
+      "date": "출시 미정",
       "description": [
-        "R&D"
+        "오늘은 어디에 새로운 발도장을 남길까요?",
+        "우리 동네 공원, 둘레길 정보앱"
       ],
-      "placeholderText": "M"
+      "icon": "images/icon_moodwalk.png",
+      "patchNotesUrl": "patch-notes.html#moodwalk"
     },
     {
-      "id": "project-y",
-      "name": "프로젝트: Y",
+      "id": "my-yggdrasil",
+      "name": "나의 세계수 정원",
       "category": "Game",
-      "status": "프로토타입 개발 중",
-      "date": "미정",
+      "status": "R&D",
+      "date": "출시 미정",
       "description": [
-        "방치형 힐링 시뮬레이션 R&D",
+        "방치형 힐링 시뮬레이션 게임",
         "천천히 머물며 성장하는 작은 세계"
       ],
-      "placeholderText": "Y"
+      "icon": "images/icon_world_tree.png",
+      "patchNotesUrl": "patch-notes.html#my-yggdrasil"
+    },
+    {
+      "id": "project-f",
+      "name": "프로젝트: F",
+      "category": "Lifestyle",
+      "status": "Develop",
+      "date": "미정",
+      "description": [
+        "비상 탈출 앱"
+      ],
+      "placeholderText": "F",
+      "patchNotesUrl": "patch-notes.html#project-f"
     }
   ]
 }

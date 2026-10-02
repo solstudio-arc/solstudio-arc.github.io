@@ -875,8 +875,8 @@
     },
     {
       "id": "moodwalk",
-      "name": "프로젝트: M",
-      "icon": "images/icon_m.png",
+      "name": "산책의 온도",
+      "icon": "images/icon_moodwalk.png",
       "notes": [
         {
           "type": "Prototype",
@@ -899,8 +899,8 @@
       ]
     },
     {
-      "id": "project-y",
-      "name": "프로젝트: Y",
+      "id": "my-yggdrasil",
+      "name": "나의 세계수 정원",
       "icon": "images/icon_world_tree.png",
       "notes": [
         {
@@ -938,6 +938,49 @@
             },
             {
               "text": "2주간 프로토타입 개발 진행 중입니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ticket-book",
+      "name": "티켓북",
+      "icon": "images/icon_ticket_book.png",
+      "notes": [
+        {
+          "type": "Develop",
+          "version": "Develop",
+          "date": "2026.10 예정",
+          "title": "개발 진행 중",
+          "summary": "개발 진행 중",
+          "changes": [
+            {
+              "text": "개발 진행 중"
+            },
+            {
+              "text": "추가 진행 사항이 생기면 공개하겠습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "project-f",
+      "name": "프로젝트: F",
+      "notes": [
+        {
+          "type": "prototype",
+          "version": "prototype",
+          "date": "2026.11 예정",
+          "title": "기획 단계",
+          "summary": "기획 단계",
+          "changes": [
+            {
+              "text": "기획 단계, 티켓북 개발 이후 개발 예정"
+            },
+            {
+              "text": "추가 진행 사항이 생기면 공개하겠습니다."
             }
           ]
         }
