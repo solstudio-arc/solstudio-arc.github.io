@@ -31,13 +31,26 @@ body {
     display: flex;
     align-items: center;
     gap: 14px;
+    width: max-content;
     color: var(--primary-dark);
     font-weight: 800;
+    text-decoration: none;
+    transition: var(--transition-fast);
 }
 
 .studio-kicker {
+    width: max-content;
     color: var(--primary-dark);
     font-weight: 800;
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.app-kicker:hover,
+.app-kicker:focus-visible,
+.studio-kicker:hover,
+.studio-kicker:focus-visible {
+    color: var(--primary);
 }
 
 .app-icon {
@@ -104,6 +117,39 @@ body {
     border-bottom: 0;
 }
 
+.account-delete-card {
+    gap: 0;
+    padding: 24px 28px;
+}
+
+.policy-section.account-delete-section {
+    display: block;
+    grid-template-columns: none;
+    padding: 22px 0;
+}
+
+.account-delete-section .section-content {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+}
+
+.account-delete-section .section-content h2 {
+    margin-bottom: 12px;
+    font-size: 24px;
+    max-width: none;
+}
+
+.account-delete-section .section-content ul,
+.account-delete-section .section-content ol {
+    margin: 14px 0 0;
+}
+
+.account-delete-section .section-content p,
+.account-delete-section .section-content li {
+    max-width: none;
+}
+
 .section-number {
     display: grid;
     place-items: center;
@@ -129,12 +175,21 @@ body {
     margin-bottom: 0;
 }
 
-.section-content ul {
+.section-content ul,
+.section-content ol {
     display: grid;
     gap: 10px;
     margin: 12px 0;
+}
+
+.section-content ul {
     padding-left: 0;
     list-style: none;
+}
+
+.section-content ol {
+    padding-left: 20px;
+    color: var(--text-light);
 }
 
 .section-content li {
@@ -143,7 +198,7 @@ body {
     color: var(--text-light);
 }
 
-.section-content li::before {
+.section-content ul li::before {
     content: "";
     position: absolute;
     top: .72em;
