@@ -511,6 +511,15 @@
     background: var(--accent);
 }
 
+.app-card.threads {
+    --accent: rgba(16, 16, 16, 0.1);
+    color: #101010;
+}
+
+.app-card.threads .card-accent {
+    background: var(--accent);
+}
+
 .app-card.blog {
     --accent: rgba(3, 199, 90, 0.14);
     color: #03c75a;
