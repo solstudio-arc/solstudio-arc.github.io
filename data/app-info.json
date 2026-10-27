@@ -78,11 +78,24 @@
   ],
   "development": [
     {
+      "id": "fake-call",
+      "name": "콜미아웃 - 자리 탈출 전화",
+      "category": "Lifestyle",
+      "status": "Test",
+      "date": "2026.10",
+      "description": [
+        "전화가 필요한 순간,",
+        "예약한 가짜 전화로 자연스럽게 자리를 벗어나세요."
+      ],
+      "icon": "images/icon_fake_call.jpg",
+      "patchNotesUrl": "patch-notes.html#fake-call"
+    },
+    {
       "id": "ticket-book",
       "name": "티켓북 - 나의 문화 생활 기록",
       "category": "Lifestyle",
       "status": "Develop",
-      "date": "2026.10",
+      "date": "2026.11",
       "description": [
         "공연/전시/영화 등 여러 가지 활동 이미지를 티켓 프레임으로 정리하는 나만의 문화 생활 기록앱"
       ],
@@ -116,18 +129,6 @@
       ],
       "icon": "images/icon_world_tree.png",
       "patchNotesUrl": "patch-notes.html#my-yggdrasil"
-    },
-    {
-      "id": "project-f",
-      "name": "프로젝트: F",
-      "category": "Lifestyle",
-      "status": "Develop",
-      "date": "미정",
-      "description": [
-        "비상 탈출 앱"
-      ],
-      "placeholderText": "F",
-      "patchNotesUrl": "patch-notes.html#project-f"
     }
   ]
 }

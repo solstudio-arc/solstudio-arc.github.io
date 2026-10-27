@@ -1024,6 +1024,56 @@
       ]
     },
     {
+      "id": "fake-call",
+      "name": "콜미아웃",
+      "icon": "images/icon_fake_call.jpg",
+      "notes": [
+        {
+          "type": "Develop",
+          "version": "Test",
+          "date": "2026.10.31 예정",
+          "title": "테스트 단계",
+          "summary": "10월 말 출시를 목표로 개발 진행 중",
+          "changes": [
+            {
+              "text": "10월 말 출시를 목표로 개발 진행 중 입니다."
+            },
+            {
+              "text": "최종 테스트 진행 중이며 UI를 수정하고 있습니다."
+            },
+            {
+              "text": "추가 진행 사항이 생기면 공개하겠습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ticket-book",
+      "name": "티켓북",
+      "icon": "images/icon_ticket_book.png",
+      "notes": [
+        {
+          "type": "Develop",
+          "version": "Develop",
+          "date": "2026.11 예정",
+          "title": "개발 진행 중",
+          "summary": "11월 말 출시를 목표로 개발 중",
+          "changes": [
+            {
+              "text": "좀 더 퀄리티 있는 앱을 선보이기 위하여 일정을 조정하였습니다."
+            },
+            {
+              "text": "11월 말 출시를 목표로 개발 진행 중 입니다."
+            },
+            {
+              "text": "추가 진행 사항이 생기면 공개하겠습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "moodwalk",
       "name": "산책의 온도",
       "icon": "images/icon_moodwalk.png",
@@ -1088,46 +1138,6 @@
             },
             {
               "text": "2주간 프로토타입 개발 진행 중입니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "ticket-book",
-      "name": "티켓북",
-      "icon": "images/icon_ticket_book.png",
-      "notes": [
-        {
-          "type": "Develop",
-          "version": "Develop",
-          "date": "2026.10 예정",
-          "title": "개발 진행 중",
-          "summary": "10월 말 출시를 목표로 개발 중",
-          "changes": [
-            {
-              "text": "10월 말 출시를 목표로 개발 진행 중 입니다."
-            },
-            {
-              "text": "추가 진행 사항이 생기면 공개하겠습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "project-f",
-      "name": "프로젝트: F",
-      "notes": [
-        {
-          "type": "prototype",
-          "version": "prototype",
-          "date": "2026.11 예정",
-          "title": "기획 단계",
-          "summary": "티켓북 출시 이후 개발 예정",
-          "changes": [
-            {
-              "text": "추가 진행 사항이 생기면 공개하겠습니다."
             }
           ]
         }
