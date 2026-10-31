@@ -74,22 +74,24 @@
       "url": "https://play.google.com/store/apps/details?id=com.solstudio.paw_up",
       "storeBadge": "images/google-play-badge.png",
       "patchNotesUrl": "patch-notes.html#paw-up"
-    }
-  ],
-  "development": [
+    },
     {
       "id": "fake-call",
       "name": "콜미아웃 - 자리 탈출 전화",
       "category": "Lifestyle",
-      "status": "Test",
+      "status": "Released",
       "date": "2026.10",
       "description": [
         "전화가 필요한 순간,",
         "예약한 가짜 전화로 자연스럽게 자리를 벗어나세요."
       ],
       "icon": "images/icon_fake_call.jpg",
+      "url": "https://play.google.com/store/apps/details?id=com.solstudio.fake_call",
+      "storeBadge": "images/google-play-badge.png",
       "patchNotesUrl": "patch-notes.html#fake-call"
-    },
+    }
+  ],
+  "development": [
     {
       "id": "ticket-book",
       "name": "티켓북 - 나의 문화 생활 기록",
