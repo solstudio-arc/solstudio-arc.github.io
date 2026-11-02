@@ -11,7 +11,7 @@
         "신나게 누르며 스트레스를 날려보세요."
       ],
       "icon": "images/icon_paw_tap.png",
-      "url": "https://play.google.com/store/apps/details?id=com.solstudio.pawtap",
+      "url": "https://play.google.com/store/apps/details?id=com.solstudio.pawtap&referrer=utm_source%3Dofficial_site",
       "storeBadge": "images/google-play-badge.png",
       "patchNotesUrl": "patch-notes.html#pawtap"
     },
@@ -26,7 +26,7 @@
         "Excel, PPT, Word, Photoshop 등"
       ],
       "icon": "images/icon_shortcut_moa.png",
-      "url": "https://play.google.com/store/apps/details?id=com.solstudio.shortcutmoa",
+      "url": "https://play.google.com/store/apps/details?id=com.solstudio.shortcutmoa&referrer=utm_source%3Dofficial_site",
       "storeBadge": "images/google-play-badge.png",
       "patchNotesUrl": "patch-notes.html#shortcut-moa"
     },
@@ -41,7 +41,7 @@
         "빠르게 기록하고 쉽게 정리해 보세요."
       ],
       "icon": "images/icon_paw_memo.png",
-      "url": "https://play.google.com/store/apps/details?id=com.solstudio.pawmemo",
+      "url": "https://play.google.com/store/apps/details?id=com.solstudio.pawmemo&referrer=utm_source%3Dofficial_site",
       "storeBadge": "images/google-play-badge.png",
       "patchNotesUrl": "patch-notes.html#paw-memo"
     },
@@ -56,7 +56,7 @@
         "타이머와 함께 집중의 시간을 만들어 보세요."
       ],
       "icon": "images/icon_focus_gear.png",
-      "url": "https://play.google.com/store/apps/details?id=com.solstudio.focus_gear",
+      "url": "https://play.google.com/store/apps/details?id=com.solstudio.focus_gear&referrer=utm_source%3Dofficial_site",
       "storeBadge": "images/google-play-badge.png",
       "patchNotesUrl": "patch-notes.html#focus-gear"
     },
@@ -71,7 +71,7 @@
         "다양한 클릭 미션으로 기상해 보세요."
       ],
       "icon": "images/icon_paw_up.png",
-      "url": "https://play.google.com/store/apps/details?id=com.solstudio.paw_up",
+      "url": "https://play.google.com/store/apps/details?id=com.solstudio.paw_up&referrer=utm_source%3Dofficial_site",
       "storeBadge": "images/google-play-badge.png",
       "patchNotesUrl": "patch-notes.html#paw-up"
     },
@@ -86,7 +86,7 @@
         "예약한 가짜 전화로 자연스럽게 자리를 벗어나세요."
       ],
       "icon": "images/icon_fake_call.jpg",
-      "url": "https://play.google.com/store/apps/details?id=com.solstudio.fake_call",
+      "url": "https://play.google.com/store/apps/details?id=com.solstudio.fake_call&referrer=utm_source%3Dofficial_site",
       "storeBadge": "images/google-play-badge.png",
       "patchNotesUrl": "patch-notes.html#fake-call"
     }
